@@ -13,6 +13,7 @@
 
         table{
             width: 500px;
+        border-collapse: collapse;
 
         }
 
@@ -20,30 +21,44 @@
             border: 1px solid black;
             padding: 10px;
         }
+    
 
         thead, tfoot {
-            back
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 
 </head>
 <body>
-    <h1>Uso de tabelas GrandesS</h1>
+    <h1>Uso de tabelas Grandes</h1>
     <table>
         <thead>
-            <tr>Estado</tr>
-            <tr>População</tr>
+            <th>Estado</th>
+            <th>População</th>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th>Total de Habitantes</th>
-                <td>0000</td>
+                <td class="num">84.352.783</td>
             </tr>
         </tfoot>
     </table>
